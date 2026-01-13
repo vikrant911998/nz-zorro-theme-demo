@@ -1,4 +1,27 @@
-<!-- NG-ZORRO -->
-<a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" alt="logo" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a>
+<div class="container">
+  <div nz-row nzJustify="center">
+    <div nz-col>
+      <h1><strong>Nz Zorro Theme Demo</strong></h1>
+    </div>
+  </div>
+  <nz-divider></nz-divider>
+  <div nz-row nzJustify="center">
+    <div nz-col nzSpan="8">
+      <form nz-form [nzLayout]="'inline'" [formGroup]="colorForm" (ngSubmit)="submitForm()">
+        <nz-form-item nzAlign="middle">
+          <nz-form-label [nzSpan]="12">Choose Color</nz-form-label>
+          <nz-form-control [nzSpan]="12">
+            <nz-color-picker formControlName="colorPicker" nzShowText></nz-color-picker>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item nzAlign="middle">
+          <nz-form-control>
+            <button nz-button nzType="primary">Submit</button>
+          </nz-form-control>
+        </nz-form-item>
+      </form>
+    </div>
+  </div>
+  <nz-divider></nz-divider>
+</div>
