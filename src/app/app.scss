@@ -1,3 +1,57 @@
 .container {
   padding: 25px;
+
+  .color-pallete-container {
+    .square {
+      width: 100px;
+      height: 100px;
+      color: white;
+      padding: 4px;
+    }
+
+    .primary {
+      background-color: #1890ff;
+    }
+
+    .secondary {
+      background-color: #6c757d;
+    }
+
+    .success {
+      background-color: #12b76a;
+    }
+
+    .error {
+      background-color: #f04438;
+    }
+
+    .warning {
+      background-color: #f79009;
+    }
+
+    .info {
+      background-color: #0dcaf0;
+    }
+  }
+
+  .button-demo-container {
+    [nz-button] {
+      margin-right: 8px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .select-demo-container {
+    nz-select {
+      margin: 0 8px 10px 0;
+      width: 120px;
+    }
+  }
+
+  .alert-demo-container {
+    nz-alert {
+      margin-bottom: 16px;
+    }
+  }
+
 }
